@@ -43,8 +43,6 @@ namespace WordCounts.Controllers
 
                 htmlDocument.LoadHtml(res);
 
-                var divs = htmlDocument.DocumentNode.Descendants("body").FirstOrDefault().InnerText;
-
                 var innerText = htmlDocument.DocumentNode.InnerText;
 
                 char[] delimiters = new char[] { ' ', '\r', '\n' };
